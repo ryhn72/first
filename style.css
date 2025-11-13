@@ -53,7 +53,6 @@ nav ul li a:hover {
 .product-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     padding: 20px;
 }
 
@@ -61,7 +60,7 @@ nav ul li a:hover {
     background-color: white;
     margin: 10px;
     padding: 20px;
-    width: calc((100%/3)-400px);
+    width: 27%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.2s ease;
@@ -109,6 +108,23 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+@media screen and (max-width: 900px) {
+    .product {
+        width: calc((100% / 3) - 30px);
+    }
+}
+@media screen and (max-width: 750px) {
+    .product {
+        width: calc((100% / 2) - 30px);
+    }
+}
+@media screen and (max-width: 350px) {
+    .product {
+        width: 100%;
+    }
+}
+
 
 
 
